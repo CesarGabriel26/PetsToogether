@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link rel="shortcut icon" href="img/Icon.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/var.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/Header.css">
+
+    <title>Pets Together</title>
+</head>
+
+<body>
+    <header id="Header">
+
+        <img class="logo" src="img/Logo.png" alt="Logo Pets Together" ondragstart="return false"
+            oncontextmenu="return false">
+
+        <nav>
+
+            <ul class="nav-itens">
+                <li> <a onclick="Scroll_to_view('Sobre_nos')">Sobre nós</a> </li>
+                <li> <a onclick="Scroll_to_view('Produtos')">Produtos</a> </li>
+                <li> <a onclick="Scroll_to_view('Trabalhos')">Trabalhos</a> </li>
+                <li> <a onclick="Scroll_to_view('Contato')">Contato</a> </li>
+            </ul>
+
+        </nav>
+
+        <div class="profile" onclick="DropDown()">
+            <span id="profile" class="material-symbols-outlined">account_circle</span>
+        </div>
+
+        <ul class="profile_nav" onmouseleave="DropDown()">
+            <li>
+                <a href="#">
+                    <div class="conjunto">
+                        Perfil
+                        <span class="material-symbols-outlined">person</span>
+                    </div>
+                </a>
+                </div>
+            </li>
+
+            <li>
+                <a href="#">
+                    <div class="conjunto">
+                        Configurações
+                        <span class="material-symbols-outlined">settings</span>
+                    </div>
+                </a>
+            </li>
+        </ul>
+
+    </header>
+
+    <main>
+
+        <div class="container">
+            <img src="https://sebraemg.com.br/wp-content/uploads/2018/06/pet-1.jpg"
+                style="width:100%; min-height: 100%;">
+        </div>
+
+    </main>
+
+    <section class="secao">
+        
+        <h1 id="Sobre_nos">Sobre nós</h1>
+
+        <div class="txt-img">
+            <div class="txt">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio minus odit, quis iusto neque, tenetur sunt suscipit laborum possimus, quia fugit. Pariatur ea laudantium, laborum delectus rem doloremque odio in?</p>
+            </div>
+            <img src="img/Logo darkMode.png" alt="">
+        </div>
+
+    </section>
+
+    <section class="secao">
+        
+        <h1 id="Produtos">Produtos</h1>
+
+        <div class="txt-img">
+            <img src="img/Logo darkMode.png" alt="">
+            <div class="txt">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio minus odit, quis iusto neque, tenetur sunt suscipit laborum possimus, quia fugit. Pariatur ea laudantium, laborum delectus rem doloremque odio in?</p>
+                <a href="html/Loja.html"><button class="Button">Ir a loja</button></a>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="secao">
+        
+        <h1 id="Trabalhos">Trabalhos</h1>
+
+        <div class="txt-img">
+            <div class="txt">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio minus odit, quis iusto neque, tenetur sunt suscipit laborum possimus, quia fugit. Pariatur ea laudantium, laborum delectus rem doloremque odio in?</p>
+            </div>
+            <img src="img/Logo darkMode.png" alt="">
+        </div>
+
+    </section>
+
+    <section class="secao">
+        
+        <h1 id="Contato">Contato</h1>
+
+        <div class="txt-img">
+            <img src="img/Logo darkMode.png" alt="">
+            <div class="txt">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio minus odit, quis iusto neque, tenetur sunt suscipit laborum possimus, quia fugit. Pariatur ea laudantium, laborum delectus rem doloremque odio in?</p>
+            </div>
+        </div>
+
+    </section>
+
+
+    <script src="js/index.js"></script>
+
+</body>
+
+</html>

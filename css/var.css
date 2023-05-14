@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&family=Roboto&family=Roboto+Slab:wght@300&display=swap');
+
+:root {
+
+    /* Cores light*/
+
+    --Header-light: white;
+    --Primaria-light: #f3f3f3;
+    --Segundaria-light: #c2c2c2;
+    --Terciaria-light: rgb(211, 211, 211);
+
+    /* Cores dark*/
+
+    --Header-dark: rgb(22, 22, 22);
+    --Primaria-dark: rgb(46, 46, 46);
+    --Segundaria-dark: rgb(87, 87, 87);
+    --Terciaria-dark: rgb(94, 94, 94);
+
+    /* Texto light*/
+    --Texto_Normal-light: rgb(46, 46, 46);
+    --Texto_Hover: #095742;
+
+    /* Texto dark*/
+    --Texto_Normalda-dark: ghostwhite;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: 'Roboto', sans-serif;
+    user-select: none;
+    scroll-behavior: smooth;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+
+.Button {
+    background: var(--Segundaria-light);
+    padding: 5px;
+
+    border: 2px solid var(--Primaria-light);
+    border-radius: 5px;
+
+    width: 100px;
+    text-transform: uppercase;
+
+    cursor: pointer;
+}

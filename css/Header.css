@@ -1,0 +1,112 @@
+header {
+    background: var(--Header-light);
+    height: 100px;
+    width: 100%;
+    position: static;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+    transition: .1s;
+    z-index: 999;
+}
+header.Fixed {
+    position: fixed;
+    top: 0;
+    width: 100%
+}
+
+.logo {
+    height: 100px;
+    margin-left: 10px;
+}
+
+.profile {
+
+    margin-right: 15px;
+    height: 50px;
+    overflow: hidden;
+
+    cursor: pointer;
+}
+.profile span {font-size: 50px;}
+
+.nav-itens {
+    display: flex;
+    list-style-type: none;
+}
+
+header li {
+    margin-left: 20px;
+}
+
+header li a {
+    text-decoration: none;
+    color: var(--Texto_Normal-light);
+
+    font-size: 25px;
+}
+
+header li:hover a {
+    color: var(--Texto_Hover);
+}
+
+header li a::after {
+    display: block;
+    content: ' ';
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 3px;
+    background: var(--Texto_Hover);
+    border-radius: 5px;
+    transform: scaleX(0);
+    transition: transform .5s;
+    transform-origin: right;
+}
+
+header li:hover a::after {
+    transform-origin: left;
+    transform: scaleX(1);
+    background: var(--Texto_Hover);
+}
+
+.profile_nav li {margin-top: 5px;}
+.profile_nav a {
+    color: var(--Texto_Normal-light);text-decoration: none;
+    font-size: 18px;
+    
+}
+.profile_nav a .conjunto {
+    display: flex;
+}
+.profile_nav span {margin-left: 5px;}
+
+.profile_nav {
+    position: absolute;
+    list-style-type: none;
+
+    overflow-y: hidden;
+
+    background-color: var(--Header-light);
+
+    right: 0px;
+    top: 100px;
+
+    padding: 10px;
+
+    height: 0;
+    width: 0;
+    opacity: 0;
+
+    z-index: 999;
+    transition: .5s;
+}
+.profile_nav.active {
+    height: 145px;
+    width: 190px;
+    opacity: 1;
+}

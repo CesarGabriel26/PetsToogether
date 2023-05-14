@@ -1,0 +1,183 @@
+<!DOCTYPE html5>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="shortcut icon" href="img/Icon.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/var.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/Header.css">
+
+</head>
+
+<body>
+
+    <header id="Header">
+
+        <img class="logo" src="../img/Logo.png" alt="Logo Pets Together" ondragstart="return false"
+            oncontextmenu="return false">
+
+        <nav>
+
+            <ul class="nav-itens">
+                <li> <a onclick="Scroll_to_view('Comida')">Comidas</a> </li>
+                <li> <a onclick="Scroll_to_view('Brinquedos')">Brinquedos</a> </li>
+                <li> <a onclick="Scroll_to_view('Acessório')">Acessório </a> </li>
+            </ul>
+
+        </nav>
+
+        <div class="profile" onclick="DropDown()">
+            <span id="profile" class="material-symbols-outlined">account_circle</span>
+        </div>
+
+        <ul class="profile_nav" onmouseleave="DropDown()">
+            <li>
+                <a href="#">
+                    <div class="conjunto">
+                        Perfil
+                        <span class="material-symbols-outlined">person</span>
+                    </div>
+                </a>
+                </div>
+            </li>
+
+            <li>
+                <a href="#">
+                    <div class="conjunto">
+                        Configurações
+                        <span class="material-symbols-outlined">settings</span>
+                    </div>
+                </a>
+            </li>
+        </ul>
+
+    </header>
+
+    <section class="secao">
+
+        <h1 id="Comida">Comidas</h1>
+
+        <div class="scrollContainer">
+
+            <div class="item">
+                <img src="https://m.media-amazon.com/images/I/81y4NNoxVcL._AC_SY606_.jpg" alt="">
+
+                <div class="textos">
+                    <p>Ração Pedigree Para Cães Filhotes Raças Médias E Grandes 10,1kg</p>
+
+                    <div class="precos">
+                        <p class="preco">R$ 174,39</p>
+                        <p class="desconto">R$ 200,00</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRFAfxBHli3nZl6UEpg60zA1p-hr5h9jd_Ws0oYxgrHXozwmyIOhq5aDW_RFmLfVv9hCxSI5q46bfnXKn0pZJ22tn9dO84PJbKI8w2UDzKtCPPAdMSEYDRH&usqp=CAE" alt="">
+
+                <div class="textos">
+                    <p>Ração Seca Nutrilus Pro+ Frango & Carne para Cães Filhotes 15 Kg</p>
+
+                    <div class="precos">
+                        <p class="preco">R$ 152,91</p>
+                        <p class="desconto">R$ 169,90</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="https://m.media-amazon.com/images/I/81y4NNoxVcL._AC_SY606_.jpg" alt="">
+
+                <div class="textos">
+                    <p>Ração Pedigree Para Cães Filhotes Raças Médias E Grandes 10,1kg</p>
+
+                    <div class="precos">
+                        <p class="preco">R$ 174,39</p>
+                        <p class="desconto">R$ 200,00</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRFAfxBHli3nZl6UEpg60zA1p-hr5h9jd_Ws0oYxgrHXozwmyIOhq5aDW_RFmLfVv9hCxSI5q46bfnXKn0pZJ22tn9dO84PJbKI8w2UDzKtCPPAdMSEYDRH&usqp=CAE" alt="">
+
+                <div class="textos">
+                    <p>Ração Seca Nutrilus Pro+ Frango & Carne para Cães Filhotes 15 Kg</p>
+
+                    <div class="precos">
+                        <p class="preco">R$ 152,91</p>
+                        <p class="desconto">R$ 169,90</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="https://m.media-amazon.com/images/I/81y4NNoxVcL._AC_SY606_.jpg" alt="">
+
+                <div class="textos">
+                    <p>Ração Pedigree Para Cães Filhotes Raças Médias E Grandes 10,1kg</p>
+
+                    <div class="precos">
+                        <p class="preco">R$ 174,39</p>
+                        <p class="desconto">R$ 200,00</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRFAfxBHli3nZl6UEpg60zA1p-hr5h9jd_Ws0oYxgrHXozwmyIOhq5aDW_RFmLfVv9hCxSI5q46bfnXKn0pZJ22tn9dO84PJbKI8w2UDzKtCPPAdMSEYDRH&usqp=CAE" alt="">
+
+                <div class="textos">
+                    <p>Ração Seca Nutrilus Pro+ Frango & Carne para Cães Filhotes 15 Kg</p>
+
+                    <div class="precos">
+                        <p class="preco">R$ 152,91</p>
+                        <p class="desconto">R$ 169,90</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="https://m.media-amazon.com/images/I/81y4NNoxVcL._AC_SY606_.jpg" alt="">
+
+                <div class="textos">
+                    <p>Ração Pedigree Para Cães Filhotes Raças Médias E Grandes 10,1kg</p>
+
+                    <div class="precos">
+                        <p class="preco">R$ 174,39</p>
+                        <p class="desconto">R$ 200,00</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRFAfxBHli3nZl6UEpg60zA1p-hr5h9jd_Ws0oYxgrHXozwmyIOhq5aDW_RFmLfVv9hCxSI5q46bfnXKn0pZJ22tn9dO84PJbKI8w2UDzKtCPPAdMSEYDRH&usqp=CAE" alt="">
+
+                <div class="textos">
+                    <p>Ração Seca Nutrilus Pro+ Frango & Carne para Cães Filhotes 15 Kg</p>
+
+                    <div class="precos">
+                        <p class="preco">R$ 152,91</p>
+                        <p class="desconto">R$ 169,90</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+    </section>
+
+
+    <script src="../js/index.js"></script>
+
+</body>
+
+</html>
